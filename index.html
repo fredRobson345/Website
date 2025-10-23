@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Coding Projects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">My Portfolio</h1>
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h2>FREDERICK ROBSON</h2>
+            <H2>SOFTWARE DEVELOPER</H2>
+            <h4>CAYMAN ISLANDS</h4>
+            <p>Explore my projects below. Scroll down to see the details and live demos of these projects.</p>
+            <a class="btn" href="#projects">See projects</a>
+          </div>
+
+          <div class="hero-image">
+            <img src="img/profile.png" alt="Profile photo" class="profile-img" />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h3 class="section-title">Projects</h3>
+        <p class="section-sub">Here is a few of the projects I have built. Click a card to view the repo or a demo.</p>
+
+        <div class="grid">
+          <!-- Example project card: copy and edit for your projects -->
+          <article class="card reveal" tabindex="0">
+            <img src="img/projects/2fa.png" alt="Project 1 screenshot" class="card-img"/>
+            <div class="card-body">
+              <h4 class="card-title">Two-Factor Authentication System</h4>
+              <p class="card-desc">A demo implementing 2-factor authentication with email & TOTP support.</p>
+              <p class="card-tags">Python</p>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live demo</a>
+                <a class="btn ghost small" href="https://github.com/fredRobson345/2-Factor-Auth" target ="_blank">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" tabindex="0">
+            <img src="https://via.placeholder.com/800x450?text=Project+2" alt="Project 2 screenshot" class="card-img"/>
+            <div class="card-body">
+              <h4 class="card-title">Portfolio Site</h4>
+              <p class="card-desc">This portfolio site built with responsive CSS and lightweight animations.</p>
+              <p class="card-tags">HTML • CSS</p>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live demo</a>
+                <a class="btn ghost small" href="#">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" tabindex="0">
+            <img src="https://via.placeholder.com/800x450?text=Project+3" alt="Project 3 screenshot" class="card-img"/>
+            <div class="card-body">
+              <h4 class="card-title">Todo App</h4>
+              <p class="card-desc">A small todo app demonstrating state management and local storage.</p>
+              <p class="card-tags">JavaScript • LocalStorage</p>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live demo</a>
+                <a class="btn ghost small" href="#">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" tabindex="0">
+            <img src="https://via.placeholder.com/800x450?text=Project+4" alt="Project 4 screenshot" class="card-img"/>
+            <div class="card-body">
+              <h4 class="card-title">Todo App</h4>
+              <p class="card-desc">A small todo app demonstrating state management and local storage.</p>
+              <p class="card-tags">JavaScript • LocalStorage</p>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live demo</a>
+                <a class="btn ghost small" href="#">Source</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h3>About</h3>
+        <p>I am Frederick Robson or Freddie, I am a student at Cardiff Metropolitan University right now. I'm in my last year of university there studying a BSc of Computer Science.
+            I am from the Cayman Islands but moved over to the UK to follow my passion for Computer Science as it is my aim to work in the IT industry. The languages I most comfortable with are 
+            Python, Java, SQL and HTML/CSS. I am always looking to learn more about the IT industry and improve my knowledge.
+        </p>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h3>Contact</h3>
+        <div class="socials">
+          <a href="https://github.com/fredRobson345" target="_blank" rel="noopener noreferrer" title="Visit my GitHub">
+            <img src="img/socials/github.png" alt="GitHub" class="social-icon" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/frederick-robson/" target="_blank" rel="noopener noreferrer" title="Visit my LinkedIn">
+            <img src="img/socials/linkedin.png" alt="LinkedIn" class="social-icon" />
+          </a>
+
+          <a href="mailto:freddie.robson2004@gmail.com" title="Send me an email">
+            <img src="img/socials/mail.png" alt="Email" class="social-icon" />
+          </a>
+        </div>
+        <p style="margin-top:12px">
+            Or: <a href="https://wwww.github.com/fredRobson345"> Visit my Github</a> · 
+            <a href="https://www.linkedin.com/in/frederick-robson/">Visit my LinkedIn</a> · 
+            <a href="mailto:freddie.robson2004@gmail.com">Email me</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Frederick Robson</small>
+      </div>
+    </footer>
+
+    <script>
+      // Set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Simple reveal-on-scroll
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        revealElements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < triggerBottom) el.classList.add('active');
+        });
+      };
+      window.addEventListener('scroll', revealOnScroll);
+      window.addEventListener('load', revealOnScroll);
+    </script>
+  </body>
+</html>
