@@ -10,7 +10,9 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <h1 class="logo">My Portfolio</h1>
+        <a href="#hero" class="site-title-link">
+          <h4 class="site-title">My Portfolio</h4>
+        </a>
         <nav class="nav">
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
@@ -20,7 +22,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section id="hero" class="hero container">
         <div class="container hero-inner">
           <div class="hero-copy">
             <h2>FREDERICK ROBSON</h2>
@@ -36,60 +38,74 @@
               <i class="devicon-mysql-plain-wordmark colored"></i>
             </div>
           </div>
-
           <div class="hero-image">
             <img src="img/profile.png" alt="Profile photo" class="profile-img" />
           </div>
         </div>
-        
       </section>
               
 
       <section id="projects" class="projects container">
-        <h3 class="section-title">Projects</h3>
+        <h2 class="section-title">Projects</h2>
         <p class="section-sub">Here is a few of the projects I have built. Click a card to view the repo or a demo.</p>
-
         <div class="grid">
-
           <article class="card reveal" tabindex="0">
-            <img src="img/projects/2fa/2fa.png" alt="2 Factor Authentication" class="card-img"/>
+            <a href="https://github.com/fredRobson345/2-Factor-Auth" target="_blank" rel="noopener noreferrer">
+              <img src="img/projects/2fa/2fa.png" alt="2 Factor Authentication" class="card-img"/>
+            </a>
             <div class="card-body">
               <h4 class="card-title">Two-Factor Authentication System</h4>
-              <p class="card-desc">A demo implementing 2-factor authentication with email</p>
-              <p class="card-tags">Python</p>
+              <p class="card-desc">Implementing 2-factor authentication using email</p>
+              <p class="card-stack">Python</p>
               <div class="card-actions">
-                <a class="btn small" href="img/projects/2fa/demo.mp4">Live demo</a>
-                <a class="btn ghost small" href="https://github.com/fredRobson345/2-Factor-Auth" target ="_blank">Source</a>
+                <a class="btn small" href="https://github.com/fredRobson345/2-Factor-Auth" target="_blank" rel="noopener noreferrer">Source Code</a>
+                <a class="btn ghost small" href="img/projects/2fa/demo.mp4">Live demo</a>
               </div>
             </div>
           </article>
-
           <article class="card reveal" tabindex="0">
-            <img src="img/projects/environmental/environmental.png" alt=" Environmental Water Logging System " class="card-img"/>
+            <a href="https://github.com/fredRobson345/Environmental-Water-Logging" target="_blank" rel="noopener noreferrer">
+              <img src="img/projects/environmental/environmental.png" alt="Environmental Water Logging System" class="card-img"/>
+            </a>
             <div class="card-body">
               <h4 class="card-title"> Environmental Water Logging System </h4>
               <p class="card-desc"> This takes user inputs and stores the data in a .csv file </p>
-              <p class="card-tags">Java</p>
+              <p class="card-stack">Java</p>
               <div class="card-actions">
-                <a class="btn small" href="#">Live demo</a>
-                <a class="btn ghost small" href="https://github.com/fredRobson345/Environmental-Water-Logging">Source</a>
+                <a class="btn  small" href="https://github.com/fredRobson345/Environmental-Water-Logging" target="_blank" rel="noopener noreferrer">Source Code</a>
+                <a class="btn ghost small" href="#">Live demo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <a href="https://github.com/fredRobson345/Hangman" target="_blank" rel="noopener noreferrer">
+              <img src="img/projects/hangman/hangman.png" alt=" Hangman " class="card-img"/>
+            </a>
+            <div class="card-body">
+              <h4 class="card-title"> Hangman </h4>
+              <p class="card-desc"> Uses user inputs to guess letters in a word using Java Swing </p>
+              <p class="card-stack"> Java </p>
+              <div class="card-actions">
+                <a class="btn small" href="https://github.com/fredRobson345/Hangman" target="_blank" rel="noopener noreferrer">Source code</a>
+                <a class="btn ghost small" href="#">Live Demo</a>
               </div>
             </div>
           </article>
 
           <!-- 
-
           CARD TEMPLATE
 
           <article class="card reveal" tabindex="0">
-            <img src=" FILE LOCATION " alt=" PROJECT NAME " class="card-img"/>
+            <a href=" LINK TO PROJECT REPO " target="_blank" rel="noopener noreferrer">
+              <img src=" FILE LOCATION " alt=" PROJECT NAME " class="card-img"/>
+            </a>
             <div class="card-body">
               <h4 class="card-title"> PROJECT TITLE </h4>
               <p class="card-desc"> DESCRIPTION </p>
-              <p class="card-tags">LANGUAGES USED </p>
+              <p class="card-stack">LANGUAGES USED </p>
               <div class="card-actions">
-                <a class="btn small" href="#">Live demo</a>
-                <a class="btn ghost small" href="#">Source</a>
+                <a class="btn small" href="#" target="_blank" rel="noopener noreferrer">Source code</a>
+                <a class="btn ghost small" href="#">Live Demo</a>
               </div>
             </div>
           </article>
@@ -98,18 +114,20 @@
         </div>
       </section>
 
-      <section id="about" class="about container">
-        <h3>About</h3>
-        <p>I am Frederick Robson or Freddie, I am a student at Cardiff Metropolitan University right now. I'm in my last year of university there studying a BSc of Computer Science.
-            I am from the Cayman Islands but moved over to the UK to follow my passion for Computer Science as it is my aim to work in the IT industry. The languages I most comfortable with are 
-            Python, Java, SQL and HTML/CSS. I am always looking to learn more about the IT industry and improve my knowledge.
-        </p>
+      <section id="about">
+        <div class="about container">
+          <h4 class="section-title">About</h4>
+          <p class="section-sub">I am Frederick Robson or Freddie, I am a student at Cardiff Metropolitan University right now. I'm in my last year of university there studying a BSc of Computer Science.
+              I am from the Cayman Islands but moved over to the UK to follow my passion for Computer Science as it is my aim to work in the IT industry. The languages I most comfortable with are 
+              Python, Java, SQL and HTML/CSS. I am always looking to learn more about the IT industry and improve my knowledge.
+          </p>
+         </div> 
       </section>
-
+      
       <section id="contact" class="contact container">
-        <h3>Contact</h3>
+        <h3 class="section-title">Contact</h3>
         <div class="socials">
-          <a href="https://github.com/fredRobson345" target="_blank" rel="noopener noreferrer" title="Visit my GitHub">
+          <a href="https://www.github.com/fredRobson345" target="_blank" rel="noopener noreferrer" title="Visit my GitHub">
             <img src="img/socials/github.png" alt="GitHub" class="social-icon" />
           </a>
 
@@ -121,12 +139,14 @@
             <img src="img/socials/mail.png" alt="Email" class="social-icon" />
           </a>
         </div>
-        <p style="margin-top:12px">
-            Or: <a href="https://wwww.github.com/fredRobson345"> Visit my Github</a> · 
-            <a href="https://www.linkedin.com/in/frederick-robson/">Visit my LinkedIn</a> · 
+        <p class="force-font">
+            Or: 
+            <a href="https://www.github.com/fredRobson345" target="_blank" rel="noopener noreferrer">Visit my Github</a> · 
+            <a href="https://www.linkedin.com/in/frederick-robson/" target="_blank" rel="noopener noreferrer">Visit my LinkedIn</a> · 
             <a href="mailto:freddie.robson2004@gmail.com">Email me</a>
         </p>
       </section>
+      
     </main>
 
     <footer class="site-footer">
@@ -134,8 +154,7 @@
         <small>&copy; <span id="year"></span> Frederick Robson</small>
       </div>
     </footer>
-
-    <script>
+<script>
       // Set current year
       document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -150,6 +169,7 @@
       };
       window.addEventListener('scroll', revealOnScroll);
       window.addEventListener('load', revealOnScroll);
-    </script>
+</script>
+    
   </body>
 </html>
