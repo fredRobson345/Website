@@ -20,6 +20,9 @@
 *{
   box-sizing: border-box
 }
+html{
+  scroll-snap-type: y mandatory;
+}
 body{
   margin: 0;
   font: var(--ff);
@@ -31,7 +34,11 @@ body{
 .container{
   max-width:var(--max-width);
   margin:0 auto;
-  padding:0 20px
+  padding:0 20px;
+  
+}
+.section{
+  scroll-snap-align: start;
 }
 
 .site-header{
