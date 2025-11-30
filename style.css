@@ -5,7 +5,7 @@
   --primarytext:#e6eef8;
   --secondarytext:#94a3b8;
   --coloraccent:#FEE12B;
-  --ff: Arial;
+  --ff: "Lucida Console";
   --h1: bold 54px/64px var(--ff);
   --h2: bold 36px/44px var(--ff);
   --h3: bold 28px/36px var(--ff);
